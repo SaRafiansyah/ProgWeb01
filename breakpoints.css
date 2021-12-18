@@ -584,6 +584,8 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
+		padding-left: 5px;
+	padding-right: 5px;
 }
 
 .homebg3 {
@@ -591,14 +593,11 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
+		padding-left: 5px;
+	padding-right: 5px;
 }
 
-.homebg1 {
-	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1499155286265-79a9dc9c6380?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80');
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
-}
+
 
 .homebg4 {
 	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://i.pinimg.com/564x/af/e7/f6/afe7f6c643a169b33ae069e31f27efc6.jpg');
