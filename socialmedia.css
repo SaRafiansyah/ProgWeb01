@@ -1,0 +1,121 @@
+/*
+    Auther: Abdelrhman Said
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.wrapperSM {
+  display: inline-flex;
+}
+
+.wrapperSM .icon {
+  position: relative;
+  background-color: black;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapperSM .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapperSM .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapperSM .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapperSM .icon:hover span,
+.wrapperSM .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapperSM .facebook:hover,
+.wrapperSM .facebook:hover .tooltip,
+.wrapperSM .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapperSM .twitter:hover,
+.wrapperSM .twitter:hover .tooltip,
+.wrapperSM .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapperSM .instagram:hover,
+.wrapperSM .instagram:hover .tooltip,
+.wrapperSM .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapperSM .github:hover,
+.wrapperSM .github:hover .tooltip,
+.wrapperSM .github:hover .tooltip::before {
+  background-color: #019c1b;
+  color: #ffffff;
+}
+
+.wrapperSM .youtube:hover,
+.wrapperSM .youtube:hover .tooltip,
+.wrapperSM .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+

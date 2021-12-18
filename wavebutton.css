@@ -1,0 +1,43 @@
+
+
+  
+.wrapper {
+  height: 100%;
+  background-color: #f5f6fa;
+}
+  
+.wave-btn {
+ 
+  transform: translate(-50%, -50%);
+
+  transition: all 1s;
+}
+  
+.wave-btn:before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 130px;
+  background-color: #0097e6;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: wave 5s infinite linear;
+  transition: all 1s;
+}
+  
+
+  
+@keyframes wave {
+  0% {
+            transform: translate(-50%) rotate(-180deg);
+      
+  }
+    
+    
+  100% {
+            transform: translate(-50%) rotate(360deg);
+  }
+}
+  
